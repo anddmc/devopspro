@@ -1,0 +1,28 @@
+docker-compose build
+docker-compose build waffle
+docker-compose up
+
+print background tasks
+docker-compose ps
+
+list content
+docker-compose ls
+
+docker-compose up -d
+
+docker-compose logs waffle
+docker-compose logs -f waffle
+
+
+docker run -it --rm my-php-app3 /bin/bash
+docker run -it --rm my-php-app3 ls
+
+#RUN export COMPOSE_HTTP_TIMEOUT=60
+#CMD export COMPOSE_HTTP_TIMEOUT=60
+
+
+https://www.packet.net/promo/cloud66/
+
+https://github.com/cloud66-samples/microservices_101/blob/vilnius/.cloud66/services.yml
+
+`
