@@ -1,0 +1,16 @@
+version: '2'
+services:
+  waffle:
+    build: .
+    stdin_open: true
+    tty: true
+    links:
+      - rabbitmq
+      - rabbitmq:rabbitmq.cloud66.local
+    environment:
+      - RABBITMQ_USERNAME=guest
+      - RABBITMQ_PASSWORD=guest
+  rabbitmq:
+    image: rabbitmq:3-management
+    ports:
+      - 8080:15672

@@ -1,0 +1,10 @@
+C:\Users\tomad1\_Work related\SharpDevelop Projects\Playground\docker01\bin\Debug\docker01.exe.config
+C:\Users\tomad1\_Work related\SharpDevelop Projects\Playground\docker01\bin\Debug\docker01.exe
+C:\Users\tomad1\_Work related\SharpDevelop Projects\Playground\docker01\bin\Debug\docker01.pdb
+C:\Users\tomad1\_Work related\SharpDevelop Projects\Playground\docker01\bin\Debug\RabbitMQ.Client.dll
+C:\Users\tomad1\_Work related\SharpDevelop Projects\Playground\docker01\bin\Debug\RabbitMQ.Client.xml
+C:\Users\tomad1\_Work related\SharpDevelop Projects\Playground\docker01\obj\Debug\docker01.exe
+C:\Users\tomad1\_Work related\SharpDevelop Projects\Playground\docker01\obj\Debug\docker01.pdb
+C:\Users\tomad1\_Work related\SharpDevelop Projects\Playground\docker01\bin\Debug\Newtonsoft.Json.dll
+C:\Users\tomad1\_Work related\SharpDevelop Projects\Playground\docker01\bin\Debug\Newtonsoft.Json.xml
+C:\Users\tomad1\_Work related\SharpDevelop Projects\Playground\docker01\obj\Debug\docker01.csprojResolveAssemblyReference.cache
