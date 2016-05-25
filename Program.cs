@@ -22,11 +22,13 @@ namespace WafflesMinion
                 UserName = System.Environment.GetEnvironmentVariable("RABBITMQ_USERNAME"),
                 Password = System.Environment.GetEnvironmentVariable("RABBITMQ_PASSWORD") 
             };
+            //Console.WriteLine("A");
             using (var connection = factory.CreateConnection())
             {
                 using (var ch_in = connection.CreateModel())
                 using (var ch_out = connection.CreateModel())
                 {
+                	//Console.WriteLine("B");
                                 ch_in.QueueDeclare(queue: "bakery.waffle.order",
                                  durable: true,
                                  exclusive: false,
@@ -37,9 +39,11 @@ namespace WafflesMinion
                                  exclusive: false,
                                  autoDelete: false,
                                  arguments: null);
+                	//Console.WriteLine("C");
                     ch_in.BasicQos(prefetchSize: 0, prefetchCount: 1, global: false);
                     Console.Write(System.Environment.MachineName + ":-- [*] Waiting for waffle back orders (backing time = " + secs + ")");
-
+					
+                    //Console.WriteLine("C");
                     var consumer = new EventingBasicConsumer(ch_in);
                     consumer.Received += (model, ea) =>
                     {
@@ -71,10 +75,12 @@ namespace WafflesMinion
                                          consumer: consumer);
         
                 }
+                //Console.WriteLine("D");
             }            
+            //Console.WriteLine("E");
             
 //            Console.Write("Press any key to continue . . . ");
-//            Console.ReadKey(true);
+            Console.ReadKey(true);
         }
     }
 }

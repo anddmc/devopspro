@@ -10,6 +10,20 @@ services:
     environment:
       - RABBITMQ_USERNAME=guest
       - RABBITMQ_PASSWORD=guest
+
+  # minion_popcorn:
+  #   build: ../minion_popcorn/
+  #   stdin_open: true
+  #   tty: true
+  #   links:
+  #     - rabbitmq
+  #     - rabbitmq:rabbitmq.cloud66.local
+  #   volumes:
+  #     - ${PWD}:/home/app
+  #   environment:
+  #     - RABBITMQ_USERNAME=guest
+  #     - RABBITMQ_PASSWORD=guest
+
   rabbitmq:
     image: rabbitmq:3-management
     ports:
